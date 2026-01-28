@@ -1,0 +1,49 @@
+<?xml version="1.0"?>
+<Locations >
+  <Project >
+    <file_marker column=" 1" line=" 1" >
+      <vfs_project />
+      <vfs_file>E:\GNAT\bin\src\sr71.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 1" line=" 1" >
+      <vfs_project />
+      <vfs_file>E:\GNAT\bin\src\main.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 1" line=" 1" >
+      <vfs_project />
+      <vfs_file>E:\GNAT\bin\src\fibonacci.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 1" line=" 1" >
+      <vfs_project />
+      <vfs_file>E:\GNAT\bin\src\fibfinal.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 1" line=" 1" >
+      <vfs_project />
+      <vfs_file>E:\GNAT\bin\src\main.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 1" line=" 1" >
+      <vfs_project />
+      <vfs_file>E:\GNAT\bin\src\fibonacci.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 1" line=" 1" >
+      <vfs_project />
+      <vfs_file>E:\GNAT\bin\src\fibfinal.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 1" line=" 1" >
+      <vfs_project>E:\Workspace\AdaProjects\flybywiresystem.gpr</vfs_project>
+      <vfs_file>E:\Workspace\AdaProjects\src\main.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 4" line=" 5" >
+      <vfs_project>E:\Workspace\AdaProjects\flybywiresystem.gpr</vfs_project>
+      <vfs_file>E:\Workspace\AdaProjects\src\main.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 1" line=" 1" >
+      <vfs_project>E:\Workspace\AdaProjects\flybywiresystem.gpr</vfs_project>
+      <vfs_file>E:\Workspace\AdaProjects\src\air_data_sensors.ads</vfs_file>
+    </file_marker>
+    <file_marker current="true" column=" 1" line=" 1" >
+      <vfs_project>E:\Workspace\AdaProjects\flybywiresystem.gpr</vfs_project>
+      <vfs_file>E:\Workspace\AdaProjects\src\main.adb</vfs_file>
+    </file_marker>
+  </Project>
+</Locations>

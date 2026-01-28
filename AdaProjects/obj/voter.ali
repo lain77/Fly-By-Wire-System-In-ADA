@@ -1,0 +1,51 @@
+V "GNAT Lib v15"
+A -gnatA
+A -mtune=generic
+A -march=x86-64
+P ZX
+
+RN
+RV NO_FIXED_POINT
+RV NO_DYNAMIC_SIZED_OBJECTS
+RV NO_IMPLEMENTATION_PRAGMAS
+RV NO_IMPLICIT_LOOPS
+
+U voter%b		voter.adb		04855c6a NE OO PK
+W air_data_sensors%s	air_data_sensors.adb	air_data_sensors.ali
+
+U voter%s		voter.ads		91e973ca EE NE OO PK
+W air_data_sensors%s	air_data_sensors.adb	air_data_sensors.ali
+
+D air_data_sensors.ads	20260128043322 c1ad3190 air_data_sensors%s
+D system.ads		20250808065140 a869df9e system%s
+D voter.ads		20260128044716 5044425a voter%s
+D voter.adb		20260128044716 956c2fa0 voter%b
+G a e
+G c Z s b [vote_best_speed voter 12 13 none]
+G c Z s s [voting_resultIP voter 7 9 none]
+X 1 air_data_sensors.ads
+1K9*Air_Data_Sensors 27e21 3|1w6 1r28 4|1w6 1r28
+4O9*Knots 3|8r16 4|6r35
+9R9*Sensor_Reading 12e14 3|12r40 4|5r40
+10o7*Value{4O9} 4|9r24 9r34 10r24 10r34 11r24 11r34 14r30 14r40 18r30 18r40
+. 22r30 22r40
+X 3 voter.ads
+3K9*Voter 14l5 14e10 4|3b14 29l5 29t10
+5E9*Voting_Source 5e62 9r16
+5n27*Pair_LR{5E9} 4|15r27
+5n36*Pair_RS{5E9} 4|19r27
+5n45*Pair_SL{5E9} 4|23r27
+5n54*Failure{5E9}
+7R9*Voting_Result 10e14 12r63 4|5r63 7r16
+8o7*Speed{1|4O9} 4|14m17 18m17 22m17
+9e7*Source{5E9} 4|15m17 19m17 23m17
+12V13*Vote_Best_Speed{7R9} 12>30 12>33 12>36 4|5b13 27l8 27t23
+12r30 L{1|9R9} 4|5b30 9r22 11r32 14r28 22r38
+12r33 R{1|9R9} 4|5b33 9r32 10r22 14r38 18r28
+12r36 S{1|9R9} 4|5b36 10r32 11r22 18r38 22r28
+X 4 voter.adb
+6o7 Diff_LR{1|4O9} 9m7 13r10 13r38 17r24
+6o16 Diff_RS{1|4O9} 10m7 13r21 17r13 17r41
+6o25 Diff_SL{1|4O9} 11m7 13r49 17r52
+7r7 Result{3|7R9} 14m10 15m10 18m10 19m10 22m10 23m10 26r14
+

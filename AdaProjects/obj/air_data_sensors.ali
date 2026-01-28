@@ -1,0 +1,88 @@
+V "GNAT Lib v15"
+A -gnatA
+A -mtune=generic
+A -march=x86-64
+P ZX
+
+RN
+RV NO_FIXED_POINT
+RV NO_FLOATING_POINT
+RV NO_DEFAULT_INITIALIZATION
+RV NO_IMPLEMENTATION_PRAGMAS
+RV NO_IMPLICIT_LOOPS
+RV NO_ELABORATION_CODE
+
+U air_data_sensors%b	air_data_sensors.adb	84f67f55 OO PK
+W ada%s			ada.ads			ada.ali
+W ada.numerics%s	a-numeri.ads		a-numeri.ali
+W ada.numerics.float_random%s  a-nuflra.adb	a-nuflra.ali
+Z ada.strings.text_buffers%s  a-sttebu.adb	a-sttebu.ali
+
+U air_data_sensors%s	air_data_sensors.ads	c1ad3190 EE NE OO PK
+
+D ada.ads		20250808065140 76789da1 ada%s
+D a-except.ads		20250808065140 e7970cd9 ada.exceptions%s
+D a-numeri.ads		20250808065140 84bea7a3 ada.numerics%s
+D a-nuflra.ads		20250808065140 4056ab7a ada.numerics.float_random%s
+D a-string.ads		20250808065140 90ac6797 ada.strings%s
+D a-sttebu.ads		20250808065140 f1ad67a2 ada.strings.text_buffers%s
+D a-stuten.ads		20250808065140 c6ced0ae ada.strings.utf_encoding%s
+D a-tags.ads		20250808065140 fbca0ad5 ada.tags%s
+D a-unccon.ads		20250808065140 0e9b276f ada.unchecked_conversion%s
+D air_data_sensors.ads	20260128043322 c1ad3190 air_data_sensors%s
+D air_data_sensors.adb	20260128033622 050de5bf air_data_sensors%b
+D interfac.ads		20250808065140 9111f9c1 interfaces%s
+D system.ads		20250808065140 a869df9e system%s
+D s-exctab.ads		20250808065140 91bef6ef system.exception_table%s
+D s-parame.ads		20250808065140 3597fc11 system.parameters%s
+D s-rannum.ads		20250808065140 95815eca system.random_numbers%s
+D s-secsta.ads		20250808065140 578279f5 system.secondary_stack%s
+D s-soflin.ads		20250808065140 5d88fdea system.soft_links%s
+D s-stache.ads		20250808065140 0b81c1fe system.stack_checking%s
+D s-stalib.ads		20250808065140 1c9580f6 system.standard_library%s
+D s-stoele.ads		20250808065140 ccded4e8 system.storage_elements%s
+D s-traent.ads		20250808065140 c81cbf8c system.traceback_entries%s
+G a e
+G c Z s b [init air_data_sensors 15 14 none]
+G c Z s b [set_true_airspeed air_data_sensors 18 14 none]
+G c Z s b [read_sensor air_data_sensors 21 13 none]
+G c Z s b [inject_failure air_data_sensors 24 14 none]
+G c Z s s [sensor_readingIP air_data_sensors 9 9 none]
+G c Z b b [TgensBIP air_data_sensors 10 4 none]
+X 1 ada.ads
+18K9*Ada 22e8 11|1r6 2r5
+X 3 a-numeri.ads
+20K13*Numerics 36e17 11|1r10 2r9
+X 4 a-nuflra.ads
+41K22*Float_Random 74e30 11|1w19 2r18
+47R9*Generator<16|65R9> 11|10r32
+49F12*Uniformly_Distributed{float}
+51V13*Random{49F12}<16|73p13> 11|48s17
+53U14*Reset<16|103p14> 11|19s10
+X 10 air_data_sensors.ads
+1K9*Air_Data_Sensors 27l5 27e21 11|4b14 67l5 67t21
+4O9*Knots 10r15 18r40 11|7r28 24r40 60r24
+6E9*Sensor_ID 6e62 21r30 24r34 11|10r18 13r28 18r16 30r34 36r30
+6n23*Left_Probe{6E9}
+6n35*Right_Probe{6E9}
+6n48*Standby_Probe{6E9}
+9R9*Sensor_Reading 12e14 21r48 11|36r48 37r17
+10o7*Value{4O9} 11|42m18 60m15
+11b7*Is_Valid{boolean} 11|43m18 61m15
+15U14*Init 11|16b14 21l8 21t12
+18U14*Set_True_Airspeed 18>32 11|24b14 27l8 27t25
+18o32 Speed{4O9} 11|24b32 26r32
+21V13*Read_Sensor{9R9} 21>25 11|36b13 64l10 64t21
+21e25 ID{6E9} 11|36b25 41r25 48r29
+24U14*Inject_Failure 24>29 24>45 11|30b14 33l8 33t22
+24e29 ID{6E9} 11|30b29 32r22
+24b45 Broken{boolean} 11|30b45 32r29
+X 11 air_data_sensors.adb
+7o4 Current_True_Airspeed{10|4O9} 26m7 51r24
+10a4 Gens(4|47R9) 19r16 48r24
+13a4 Broken_Sensors(boolean) 32m7 41r10
+18e11 S{10|6E9} 19r21
+37r7 Reading{10|9R9} 42m10 43m10 44r17 60m7 61m7 63r14
+38f7 Noise{float} 48m7 51r49
+39f7 Raw_Val{float} 51m7 54r10 55m10 56r13 57m13 60r30
+
