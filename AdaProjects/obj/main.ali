@@ -29,7 +29,7 @@ RV NO_IMPLEMENTATION_PRAGMAS
 RV MAX_TASKS=1+
 RV MAX_ENTRY_QUEUE_LENGTH=1+
 
-U main%b		main.adb		23c484c0 NE OO SU
+U main%b		main.adb		6399daa6 NE OO SU
 W ada%s			ada.ads			ada.ali
 Z ada.calendar.delays%s	a-caldel.adb		a-caldel.ali
 Z ada.exceptions%s	a-except.adb		a-except.ali
@@ -96,7 +96,7 @@ D interfac.ads		20250808065140 9111f9c1 interfaces%s
 D i-c.ads		20250808065140 e94c966a interfaces.c%s
 D i-cstrin.ads		20250808065140 5409c1a4 interfaces.c.strings%s
 D i-cstrea.ads		20250808065140 ffd01b9d interfaces.c_streams%s
-D main.adb		20260128044908 6748f774 main%b
+D main.adb		20260128045530 2715a912 main%b
 D system.ads		20250808065140 a869df9e system%s
 D s-atacco.ads		20250808065140 5868e3ba system.address_to_access_conversions%s
 D s-arit128.ads		20250808065140 239a85f5 system.arith_128%s
@@ -170,44 +170,44 @@ X 6 a-flteio.ads
 X 17 a-textio.ads
 58K13*Text_IO 785e16 32|1w10 1r33 27r32
 89I12*Field{integer}
-284U14*New_Line 32|63s10 72s4 74s4
-295U14*Skip_Line 32|76s4
-515U14*Put 32|55s10 57s10 58s10 59s10 61s10 62s10
-565U14*Put_Line 32|49s13 68s7 73s4 78s4
+284U14*New_Line 32|68s10 77s4 79s4
+295U14*Skip_Line 32|81s4
+515U14*Put 32|60s10 62s10 63s10 64s10 66s10 67s10
+565U14*Put_Line 32|49s13 54s13 73s7 78s4 83s4
 X 20 a-tifiio.ads
 26k21*Fixed_IO 101e25 32|27r40
-68U14 Put 32|57s21[27] 58s22[27] 59s22[27] 62s29[27]
-70i7 Fore{17|89I12} 32|57r42[27] 58r43[27] 59r43[27] 62r50[27]
-71i7 Aft{17|89I12} 32|57r51[27] 58r52[27] 59r52[27] 62r59[27]
-72i7 Exp{17|89I12} 32|57r59[27] 58r60[27] 59r60[27] 62r67[27]
+68U14 Put 32|62s21[27] 63s22[27] 64s22[27] 67s29[27]
+70i7 Fore{17|89I12} 32|62r42[27] 63r43[27] 64r43[27] 67r50[27]
+71i7 Aft{17|89I12} 32|62r51[27] 63r52[27] 64r52[27] 67r59[27]
+72i7 Exp{17|89I12} 32|62r59[27] 63r60[27] 64r60[27] 67r67[27]
 X 27 air_data_sensors.ads
 1K9*Air_Data_Sensors 27e21 32|3w6 3r29
 4O9*Knots 32|27r49
 6n23*Left_Probe{6E9} 32|44r35
-6n35*Right_Probe{6E9} 32|45r35 50r28
+6n35*Right_Probe{6E9} 32|45r35 50r28 55r28
 6n48*Standby_Probe{6E9} 32|46r35
 9R9*Sensor_Reading 12e14 32|34r41
-10o7*Value{4O9} 32|57r35 58r36 59r36
+10o7*Value{4O9} 32|62r35 63r36 64r36
 15U14*Init 32|38s7
 18U14*Set_True_Airspeed 32|39s7
 21V13*Read_Sensor{9R9} 32|44s23 45s23 46s23
-24U14*Inject_Failure 32|50s13
+24U14*Inject_Failure 32|50s13 55s13
 X 28 interfac.ads
 68I9*Integer_64<long_long_integer>
 76I9*Integer_128<long_long_long_integer>
 X 32 main.adb
-6U11*Main 6b11 81l5 81t9
-8w14 Flight_State 15b19 25l8 25t20 41r13 79r4
-9U17 Land_Aircraft 16b17 19l11 19t24 79s17
+6U11*Main 6b11 86l5 86t9
+8w14 Flight_State 15b19 25l8 25t20 41r13 84r4
+9U17 Land_Aircraft 16b17 19l11 19t24 84s17
 10V16 Is_Flying{boolean} 21b16 24l11 24t20 41s26
 12b7 Flying=16:7{boolean} 18r10 23r17
 27K12 Knots_IO[20|26] 28r8
-31t9 Flight_Computer_Task 33b14 69l8 69t28
-34r7 Reading_L{27|9R9} 44m10 53r39 57r25
-34r18 Reading_R{27|9R9} 45m10 53r50 58r26
-34r29 Reading_S{27|9R9} 46m10 53r61 59r26
-35r7 Consensus{90|7R9} 53m10 61r48 62r33
-36i7 Cycle{integer} 42m10 42r19 48r13 55r39
+31t9 Flight_Computer_Task 33b14 74l8 74t28
+34r7 Reading_L{27|9R9} 44m10 58r39 62r25
+34r18 Reading_R{27|9R9} 45m10 58r50 63r26
+34r29 Reading_S{27|9R9} 46m10 58r61 64r26
+35r7 Consensus{90|7R9} 58m10 66r48 67r33
+36i7 Cycle{integer} 42m10 42r19 48r13 53r13 60r39
 X 35 s-arit128.ads
 59I12*Int128{28|76I9}
 92V13*Multiply_With_Ovflo_Check128{59I12} 96i<c,__gnat_mulv128>22
@@ -219,9 +219,9 @@ X 65 s-stausa.ads
 272U14*Output_Results 276i<c,__gnat_stack_usage_output_results>22
 X 90 voter.ads
 3K9*Voter 32|4w6 4r29 90|14e10
-5E9*Voting_Source 32|61r28 90|5e62
+5E9*Voting_Source 32|66r28 90|5e62
 7R9*Voting_Result 32|35r19 90|10e14
-8o7*Speed{27|4O9} 32|62r43
-9e7*Source{5E9} 32|61r58
-12V13*Vote_Best_Speed{7R9} 32|53s23
+8o7*Speed{27|4O9} 32|67r43
+9e7*Source{5E9} 32|66r58
+12V13*Vote_Best_Speed{7R9} 32|58s23
 

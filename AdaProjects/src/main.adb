@@ -45,9 +45,16 @@ procedure Main is
          Reading_R := Read_Sensor(Right_Probe);
          Reading_S := Read_Sensor(Standby_Probe);
 
+         --Simulates a failure on the right sensor and shuts it down
          if Cycle = 10 then
             Put_Line("Right sensor failure");
             Inject_Failure(Right_Probe, True);
+         end if;
+
+         --Restart the right sensor
+         if Cycle = 15 then
+            Put_Line("Restarting right sensor");
+            Inject_Failure(Right_Probe, False);
          end if;
 
          Consensus := Vote_Best_Speed(Reading_L, Reading_R, Reading_S);
